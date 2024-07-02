@@ -1543,6 +1543,7 @@
     <!-- realtime PID tuning message -->
     <message id="194" name="PID_TUNING">
       <description>PID tuning information.</description>
+      <field type="uint32_t" name="time_boot_ms" units="ms">Timestamp (time since system boot).</field>
       <field type="uint8_t" name="axis" enum="PID_TUNING_AXIS" instance="true">Axis.</field>
       <field type="float" name="desired">Desired rate.</field>
       <field type="float" name="achieved">Achieved rate.</field>
